@@ -14,6 +14,9 @@ public class Main {
         lista.add(5);
         lista.add(2);
         lista.add(4);
+        lista.add(14);
+        lista.add(27);
+        lista.add(1);
 
         Nodo raiz = new Nodo(lista);
         raiz.ordenar();

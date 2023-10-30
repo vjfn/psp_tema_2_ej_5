@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Collections;
 
 public class Nodo implements Runnable {
     private List<Integer> lista;
@@ -30,6 +29,7 @@ public class Nodo implements Runnable {
 
         List<Integer> mitadIzquierda = new ArrayList<>(lista.subList(0, mitad));
         List<Integer> mitadDerecha = new ArrayList<>(lista.subList(mitad, lista.size()));
+
         Nodo nodoIzquierdo = new Nodo(mitadIzquierda);
         Nodo nodoDerecho = new Nodo(mitadDerecha);
 
@@ -63,7 +63,6 @@ public class Nodo implements Runnable {
             resultado.add(lista2.get(j));
             j++;
         }
-
         lista.clear();
         lista.addAll(resultado);
     }
