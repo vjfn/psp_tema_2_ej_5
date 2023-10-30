@@ -18,8 +18,12 @@ public class Main {
         lista.add(27);
         lista.add(1);
 
+
         Nodo raiz = new Nodo(lista);
+
         raiz.ordenar();
+
         System.out.println(lista);
+
     }
 }

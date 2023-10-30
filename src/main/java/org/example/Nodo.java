@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Nodo implements Runnable {
+public class Nodo extends Thread {
     private List<Integer> lista;
 
     public Nodo(List<Integer> lista) {
